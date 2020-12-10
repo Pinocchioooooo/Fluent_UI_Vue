@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: @font-family;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  color: inherit;
+  font: inherit;
+}
+
+a,
+button,
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 import 'normalize.css'
-import '@/styles/variants/index.less'
+import '@/styles/index.less'
 
 Vue.config.productionTip = false
 
