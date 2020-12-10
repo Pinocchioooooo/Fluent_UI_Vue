@@ -1,12 +1,26 @@
 .fe-button {
   display: inline-block;
+
+  height: 32px;
   padding: 6px 20px;
+
   border: 1px solid transparent;
   border-radius: 2px;
+
   color: #fff;
+  font-size: 14px;
+  text-align: center;
+
   background-color: #0078d4;
+
   cursor: pointer;
   user-select: none;
+
+  > i[class^='icon-ic'] {
+    margin-right: 8px;
+
+    vertical-align: middle;
+  }
 
   &:hover {
     background-color: #106ebe;
@@ -18,12 +32,15 @@
 
   &:disabled {
     color: #a19f9d;
+
     background-color: #f3f2f1;
+
     cursor: not-allowed;
   }
 
   &.-text {
     color: #201f1e;
+
     background-color: transparent;
 
     &:hover {
@@ -36,7 +53,9 @@
 
     &:disabled {
       color: #a19f9d;
+
       background-color: transparent;
+
       cursor: not-allowed;
     }
   }
