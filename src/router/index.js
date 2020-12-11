@@ -5,7 +5,7 @@ import FeButton from '@/button/demo'
 
 Vue.use(VueRouter)
 
-const routes = [{ path: '/fe-button', component: FeButton }]
+const routes = [{ path: '/button', component: FeButton }]
 
 const router = new VueRouter({
   mode: 'history',

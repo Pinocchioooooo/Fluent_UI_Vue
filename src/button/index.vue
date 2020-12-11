@@ -1,5 +1,13 @@
 <template>
-  <button :class="['fe-button', { '-text': type === 'text' }]" :disabled="disabled" @click="handleClick">
+  <button
+    class="fe-button"
+    :disabled="disabled"
+    :class="{
+      '-text': type === 'text',
+      '-plain': plain
+    }"
+    @click="handleClick"
+  >
     <template v-if="icon"><i :class="icon"></i></template>
     <span><slot></slot></span>
   </button>
@@ -17,6 +25,9 @@ export default {
       type: String
     },
     disabled: {
+      type: Boolean
+    },
+    plain: {
       type: Boolean
     }
   },
